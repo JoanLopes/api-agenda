@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="065d5b45-bb05-4cb2-9819-c931bb15ffd6" name="Default Changelist" comment="" />
+    <list default="true" id="065d5b45-bb05-4cb2-9819-c931bb15ffd6" name="Default Changelist" comment="add entity contato">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20200919032617.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Contato.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/api-agenda.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api-agenda.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Agenda.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Agenda.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +22,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <executable path="composer" />
     </execution>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
@@ -92,26 +107,45 @@
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
     </include_path>
   </component>
   <component name="ProjectId" id="1W69W5kQbBkS4xBfazOy7M0AvBX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/console" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="PHP Script.update">
+  <component name="RunManager" selected="PHP Script.server-run">
     <configuration name="server-run" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/console" scriptParameters="server:run">
       <CommandLine>
         <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.2" />
+          <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
       <method v="2" />
@@ -129,18 +163,7 @@
       <item itemvalue="PHP Script.update" />
     </list>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -157,64 +180,62 @@
       <workItem from="1578462481614" duration="1677000" />
       <workItem from="1578464171192" duration="54000" />
       <workItem from="1578464235192" duration="3539000" />
+      <workItem from="1600417123349" duration="4759000" />
+      <workItem from="1600484907913" duration="85000" />
+      <workItem from="1600485019668" duration="50000" />
+      <workItem from="1600485087526" duration="50000" />
+      <workItem from="1600485148542" duration="3662000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add entity contato" />
+    <option name="LAST_COMMIT_MESSAGE" value="add entity contato" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="290" y="54" width="824" height="684" key="#CLI_Interpreters" timestamp="1578463584582">
-      <screen x="49" y="27" width="1317" height="741" />
+    <state x="532" y="56" width="824" height="691" key="#CLI_Interpreters" timestamp="1600496293678">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state x="290" y="54" width="824" height="684" key="#CLI_Interpreters/49.27.1317.741@49.27.1317.741" timestamp="1578463584582" />
-    <state x="302" y="59" width="800" height="677" key="#Composer" timestamp="1578461455138">
-      <screen x="49" y="27" width="1317" height="741" />
+    <state x="532" y="56" width="824" height="691" key="#CLI_Interpreters/0.29.1366.739@0.29.1366.739" timestamp="1600496293678" />
+    <state x="681" y="29" width="675" height="739" key="#PHP" timestamp="1600496296319">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state x="302" y="59" width="800" height="677" key="#Composer/49.27.1317.741@49.27.1317.741" timestamp="1578461455138" />
-    <state x="302" y="58" width="800" height="677" key="#Plugins" timestamp="1578464158016">
-      <screen x="49" y="27" width="1317" height="741" />
+    <state x="681" y="29" width="675" height="739" key="#PHP/0.29.1366.739@0.29.1366.739" timestamp="1600496296319" />
+    <state x="222" y="29" width="912" height="739" key="CommitChangelistDialog2" timestamp="1600496528247">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state x="302" y="58" width="800" height="677" key="#Plugins/49.27.1317.741@49.27.1317.741" timestamp="1578464158016" />
-    <state x="165" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578511831082">
-      <screen x="49" y="27" width="1317" height="741" />
+    <state x="222" y="29" width="912" height="739" key="CommitChangelistDialog2/0.29.1366.739@0.29.1366.739" timestamp="1600496528247" />
+    <state x="416" y="313" width="523" height="178" key="ComposerInitDialogKey" timestamp="1600417356709">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state x="165" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/49.27.1317.741@49.27.1317.741" timestamp="1578511831082" />
-    <state x="490" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578463600215">
-      <screen x="49" y="27" width="1317" height="741" />
+    <state x="416" y="313" width="523" height="178" key="ComposerInitDialogKey/0.29.1366.739@0.29.1366.739" timestamp="1600417356709" />
+    <state width="1320" height="162" key="GridCell.Tab.0.bottom" timestamp="1600496528422">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state x="490" y="154" width="424" height="484" key="FileChooserDialogImpl/49.27.1317.741@49.27.1317.741" timestamp="1578463600215" />
-    <state width="1271" height="175" key="GridCell.Tab.0.bottom" timestamp="1578513447721">
-      <screen x="49" y="27" width="1317" height="741" />
+    <state width="1320" height="162" key="GridCell.Tab.0.bottom/0.29.1366.739@0.29.1366.739" timestamp="1600496528422" />
+    <state width="1320" height="162" key="GridCell.Tab.0.center" timestamp="1600496528422">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state width="1271" height="175" key="GridCell.Tab.0.bottom/49.27.1317.741@49.27.1317.741" timestamp="1578513447721" />
-    <state width="1271" height="175" key="GridCell.Tab.0.center" timestamp="1578513447720">
-      <screen x="49" y="27" width="1317" height="741" />
+    <state width="1320" height="162" key="GridCell.Tab.0.center/0.29.1366.739@0.29.1366.739" timestamp="1600496528422" />
+    <state width="1320" height="162" key="GridCell.Tab.0.left" timestamp="1600496528421">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state width="1271" height="175" key="GridCell.Tab.0.center/49.27.1317.741@49.27.1317.741" timestamp="1578513447720" />
-    <state width="1271" height="175" key="GridCell.Tab.0.left" timestamp="1578513447720">
-      <screen x="49" y="27" width="1317" height="741" />
+    <state width="1320" height="162" key="GridCell.Tab.0.left/0.29.1366.739@0.29.1366.739" timestamp="1600496528421" />
+    <state width="1320" height="162" key="GridCell.Tab.0.right" timestamp="1600496528422">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state width="1271" height="175" key="GridCell.Tab.0.left/49.27.1317.741@49.27.1317.741" timestamp="1578513447720" />
-    <state width="1271" height="175" key="GridCell.Tab.0.right" timestamp="1578513447720">
-      <screen x="49" y="27" width="1317" height="741" />
+    <state width="1320" height="162" key="GridCell.Tab.0.right/0.29.1366.739@0.29.1366.739" timestamp="1600496528422" />
+    <state x="172" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1600485455931">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state width="1271" height="175" key="GridCell.Tab.0.right/49.27.1317.741@49.27.1317.741" timestamp="1578513447720" />
-    <state x="196" y="33" key="SettingsEditor" timestamp="1578464224551">
-      <screen x="49" y="27" width="1317" height="741" />
+    <state x="172" y="31" width="1022" height="737" key="SettingsEditor/0.29.1366.739@0.29.1366.739" timestamp="1600485455931" />
+    <state x="309" y="38" width="738" height="728" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600424304795">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state x="196" y="33" key="SettingsEditor/49.27.1317.741@49.27.1317.741" timestamp="1578464224551" />
-    <state x="435" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1578464237863">
-      <screen x="49" y="27" width="1317" height="741" />
-    </state>
-    <state x="435" y="224" key="com.intellij.ide.util.TipDialog/49.27.1317.741@49.27.1317.741" timestamp="1578464237863" />
-    <state x="371" y="175" width="672" height="677" key="run.anything.popup" timestamp="1578464262583">
-      <screen x="49" y="27" width="1317" height="741" />
-    </state>
-    <state x="371" y="175" width="672" height="677" key="run.anything.popup/49.27.1317.741@49.27.1317.741" timestamp="1578464262583" />
-    <state x="370" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1578464257344">
-      <screen x="49" y="27" width="1317" height="741" />
-    </state>
-    <state x="370" y="89" width="672" height="678" key="search.everywhere.popup/49.27.1317.741@49.27.1317.741" timestamp="1578464257344" />
+    <state x="309" y="38" width="738" height="728" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.29.1366.739@0.29.1366.739" timestamp="1600424304795" />
   </component>
 </project>

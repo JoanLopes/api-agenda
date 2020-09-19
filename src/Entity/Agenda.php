@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -29,19 +31,19 @@ class Agenda
     private $nome;
 
     /**
-     * @ORM\Column(type="bigint")
-     */
-    private $telefone;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     */
-    private $email;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Local", inversedBy="agendas")
      */
     private $local;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Contato::class, mappedBy="agenda")
+     */
+    private $contato;
+
+    public function __construct()
+    {
+        $this->contato = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -72,30 +74,6 @@ class Agenda
         return $this;
     }
 
-    public function getTelefone(): ?string
-    {
-        return $this->telefone;
-    }
-
-    public function setTelefone(string $telefone): self
-    {
-        $this->telefone = $telefone;
-
-        return $this;
-    }
-
-    public function getEmail(): ?string
-    {
-        return $this->email;
-    }
-
-    public function setEmail(string $email): self
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
     public function getLocal(): ?Local
     {
         return $this->local;
@@ -104,6 +82,37 @@ class Agenda
     public function setLocal(?Local $local): self
     {
         $this->local = $local;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Contato[]
+     */
+    public function getContato(): Collection
+    {
+        return $this->contato;
+    }
+
+    public function addContato(Contato $contato): self
+    {
+        if (!$this->contato->contains($contato)) {
+            $this->contato[] = $contato;
+            $contato->setAgenda($this);
+        }
+
+        return $this;
+    }
+
+    public function removeContato(Contato $contato): self
+    {
+        if ($this->contato->contains($contato)) {
+            $this->contato->removeElement($contato);
+            // set the owning side to null (unless already changed)
+            if ($contato->getAgenda() === $this) {
+                $contato->setAgenda(null);
+            }
+        }
 
         return $this;
     }
